@@ -1,138 +1,19 @@
-/* 全局样式重置 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* 主容器样式 */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 标题样式 */
-h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-/* 输入区域样式 */
-#taskInput {
-    width: calc(100% - 100px);
-    padding: 10px 15px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-#taskInput:focus {
-    border-color: #3498db;
-}
-
-#addBtn {
-    width: 80px;
-    padding: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
-}
-
-#addBtn:hover {
-    background-color: #2980b9;
-}
-
-/* 任务列表样式 */
-#taskList {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-/* 待办项默认样式 */
-.task-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 15px;
-    margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-.task-item:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+h1 {
+    margin-bottom: 20px;
 }
 
-/* 完成状态样式 */
-.task-item.completed {
-    background-color: #f8f9fa;
-    color: #6c757d;
-}
-
-.task-item.completed .task-text {
-    text-decoration: line-through;
-}
-
-/* 任务文本样式 */
-.task-text {
-    flex-grow: 1;
-    padding-right: 10px;
-}
-
-/* 删除按钮样式 */
-.delete-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.delete-btn:hover {
-    background-color: #c0392b;
-}
-
-/* 响应式设计 */
-@media (max-width: 650px) {
-    .container {
-        margin: 20px;
-        width: calc(100% - 40px);
-    }
-    
-    #taskInput {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    #addBtn {
-        width: 100%;
-        margin-left: 0;
-    }
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
 }
